@@ -30,10 +30,10 @@ from crypto_wallet import *
 # Database of Fintech Finder candidates including their name, digital address, rating and hourly cost per Ether.
 # A single Ether is currently valued at $1,500
 candidate_database = {
-    "Lane": ["Lane", "0x8B91Bb3e1450450405c4990F7a3A714b794577Ca", "4.3", .20, "/Users/ddevii/Rutgers/BlockChainWallet_hw/Images/lane.jpeg"],
-    "Ash": ["Ash", "0xda79C2E3a9dDFc7F2A2b11dbb724D160e099C7E1", "5.0", .33, "/Users/ddevii/Rutgers/BlockChainWallet_hw/Images/ash.jpeg"],
-    "Jo": ["Jo", "0xAB24f2cE0a0bb284873b465296992716b71c9F36", "4.7", .19, "/Users/ddevii/Rutgers/BlockChainWallet_hw/Images/jo.jpeg"],
-    "Kendall": ["Kendall", "0xF7fc38247B530f0D8f67b9d069b215e9bF57f92f", "4.1", .16, "/Users/ddevii/Rutgers/BlockChainWallet_hw/Images/kendall.jpeg"]
+    "Lane": ["Lane", "0x8B91Bb3e1450450405c4990F7a3A714b794577Ca", "4.3", .20, "Images/lane.jpeg"],
+    "Ash": ["Ash", "0xda79C2E3a9dDFc7F2A2b11dbb724D160e099C7E1", "5.0", .33, "Images/ash.jpeg"],
+    "Jo": ["Jo", "0xAB24f2cE0a0bb284873b465296992716b71c9F36", "4.7", .19, "Images/jo.jpeg"],
+    "Kendall": ["Kendall", "0xF7fc38247B530f0D8f67b9d069b215e9bF57f92f", "4.1", .16, "Images/kendall.jpeg"]
 }
 
 # A list of the FinTech Finder candidates first names
@@ -237,7 +237,7 @@ if st.sidebar.button("Send Transaction"):
     st.sidebar.write(transaction_hash)
 
     # Celebrate your successful payment
-    st.balloons()
+    st.success('Transaction Completed!')
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
